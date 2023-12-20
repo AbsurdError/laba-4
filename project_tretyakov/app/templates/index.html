@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django Dishes</title>
+</head>
+<body>
+    <h1>Меню ресторана</h1>
+    {% for i in dishes %}
+    <hr>
+    <h2>{{ i.name }}</h2>
+    <p>{{ i.category }}</p>
+    <p>Цена: {{ i.price }} ₽</p>
+    <p>Список ингридиетов: {{ i.ingredients }}</p>
+    <hr>
+    {% endfor %}
+</body>
+</html>
